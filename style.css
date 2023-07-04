@@ -1,3 +1,7 @@
+html {
+    overflow-x: hidden;
+}
+
 .jumbotron {
     padding-top: 6rem;
     background-color: #fa7d09;
