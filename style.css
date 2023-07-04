@@ -1,7 +1,3 @@
-html {
-    overflow-x: hidden;
-}
-
 .jumbotron {
     padding-top: 6rem;
     background-color: #fa7d09;
@@ -40,7 +36,7 @@ section {
     position: absolute;
     color: #fa7d09;
     font-size: 6em;
-    font-weight: 600;
+    font-weight: bold;
     font-style: italic;
     top: 30px;
     left: 50%;
@@ -58,7 +54,7 @@ section {
     position: absolute;
     color: #fa7d09;
     font-size: 4.3em;
-    font-weight: 600;
+    font-weight: bold;
     font-style: italic;
     top: 350px;
     left: 50%;
@@ -95,6 +91,7 @@ section {
     transform: translate3d(-50%, 0, 90px);
     opacity: 0;
     transition: 0.5s;
+    z-index: 3;
 }
 
 .motorbike-box:hover .motorbike-detail-button {
@@ -107,8 +104,9 @@ section {
     top: 45%;
     left: 50%;
     transform: translate3d(-50%, -45%, 100px);
-    max-width: 450px;
+    max-width: 350px;
     transition: 0.5s;
+    z-index: 2;
 }
 
 .motorbike-box:hover .motorbike-img {
