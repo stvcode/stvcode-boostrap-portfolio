@@ -22,3 +22,91 @@ section {
 #gallery .row>* {
     padding: 0;
 }
+
+.motorbike-box {
+    position: relative;
+    background-color: #4a3f35;
+    border-radius: 10px;
+    height: 500px;
+    transform-style: preserve-3d;
+}
+
+.motorbike-box::before {
+    content: "MY";
+    position: absolute;
+    color: #fa7d09;
+    font-size: 6em;
+    font-weight: 600;
+    font-style: italic;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.motorbike-box:hover::before {
+    opacity: 0.2;
+}
+
+.motorbike-box::after {
+    content: "MOTORBIKE";
+    position: absolute;
+    color: #fa7d09;
+    font-size: 4.3em;
+    font-weight: 600;
+    font-style: italic;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.motorbike-box:hover::after {
+    opacity: 0.2;
+}
+
+.motorbike-name {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #fa7d09;
+    text-align: center;
+    font-size: 2em;
+    opacity: 0;
+    transform: translate3d(0, 0, 50px);
+    transition: 0.5s;
+}
+
+.motorbike-box:hover .motorbike-name {
+    top: 10px;
+    opacity: 1;
+}
+
+.motorbike-detail-button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate3d(-50%, 0, 90px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.motorbike-box:hover .motorbike-detail-button {
+    opacity: 1;
+    bottom: 15px;
+}
+
+.motorbike-img {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate3d(-50%, -45%, 100px);
+    max-width: 450px;
+    transition: 0.5s;
+}
+
+.motorbike-box:hover .motorbike-img {
+    transform: translate3d(-50%, -45%, 80px) scale(1.2);
+}

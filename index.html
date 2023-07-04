@@ -38,6 +38,9 @@
                         <a class="nav-link" href="#projects" style="color: #fa7d09;">Projects</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#my-motorbike" style="color: #fa7d09;">My Motorbike</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#gallery" style="color: #fa7d09;">Gallery</a>
                     </li>
                     <li class="nav-item">
@@ -190,6 +193,48 @@
                 </div>
             </div>
         </div>
+
+        <!-- My Motorbike -->
+        <section id="my-motorbike">
+            <div class="cointainer">
+                <div class="row text-center mb-3">
+                    <div class="col">
+                        <h2 style="color: #4a3f35;">My Motorbike</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="motorbike-box">
+                            <h4 class="motorbike-name">KTM</h4>
+                            <img src="img/Motorbike/1.png" alt="ktm" class="motorbike-img">
+                            <a href="#" class="btn motorbike-detail-button"
+                                style="background-color: #fa7d09; color: #4a3f35;">Show
+                                Details</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="motorbike-box">
+                            <h4 class="motorbike-name">Ducati</h4>
+                            <img src="img/Motorbike/2.png" alt="ducati" class="motorbike-img">
+                            <a href="#" class="btn motorbike-detail-button"
+                                style="background-color: #fa7d09; color: #4a3f35;">Show
+                                Details</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="motorbike-box">
+                            <h4 class="motorbike-name">Yamaha</h4>
+                            <img src="img/Motorbike/3.png" alt="yamaha" class="motorbike-img">
+                            <a href="#" class="btn motorbike-detail-button"
+                                style="background-color: #fa7d09; color: #4a3f35;">Show
+                                Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Akhir My motorbike -->
+
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#4a3f35" fill-opacity="1"
                 d="M0,192L48,192C96,192,192,192,288,181.3C384,171,480,149,576,160C672,171,768,213,864,213.3C960,213,1056,171,1152,165.3C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -382,6 +427,17 @@
                 })
                 .catch(error => console.error('Error!', error.message))
         })
+    </script>
+
+
+    <script type="text/javascript"
+        src="Js/raw.githubusercontent.com_micku7zu_vanilla-tilt.js_master_dist_vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".motorbike-box"), {
+            max: 35,
+            speed: 1000,
+            glare: true
+        });
     </script>
 </body>
 
